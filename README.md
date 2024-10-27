@@ -1,10 +1,27 @@
-# i-love-web
+# 🌐 I Love Web Project
 
-Learning Journal en Digital Gardening
+**Welkom bij het I Love Web Project!**  
+Dit project is gericht op het ontwikkelen van webvaardigheden door middel van praktijkgerichte sprints, met een focus op design, toegankelijkheid en interactiviteit.
 
-De instructie voor de I Love Web vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/i-love-web/blob/main/docs/INSTRUCTIONS.md)
+---
 
+## 🏃 Sprints Overzicht
 
-## Licentie
+1. **Sprint 1: Your Tribe**  
+   Basis webontwikkeling en samenwerking binnen een team.
 
-This project is licensed under the terms of the [MIT license](./LICENSE).
+2. **Sprint 2: The Client**  
+   Klantgericht ontwerpen en ontwikkelen, inclusief wireframes en prototyping.
+
+3. **Sprint 3: All Human**  
+   Toegankelijkheid en gebruiksvriendelijkheid, met focus op WCAG-richtlijnen en UX-principes.
+
+---
+
+## 📂 Documentatie
+
+Gedetailleerde documentatie van alle sprints, leerpunten, codevoorbeelden en feedback is beschikbaar in de [Wiki](https://github.com/Saif8599/i-love-web/wiki). Hier vind je alles over de voortgang, aanpak en bevindingen per sprint.
+
+---
+
+Veel plezier met het verkennen van het project! 😊
