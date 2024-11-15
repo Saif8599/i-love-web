@@ -16,6 +16,8 @@ Dit project is gericht op het ontwikkelen van webvaardigheden door middel van pr
 3. **Sprint 3: All Human**  
    Toegankelijkheid en gebruiksvriendelijkheid, met focus op WCAG-richtlijnen en UX-principes.
 
+4. **Sprint 4: Look and Feel**
+   Toepassen van een huisstijl en het maken van formulieren.
 ---
 
 ## 📂 Documentatie
