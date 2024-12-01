@@ -1,17 +1,66 @@
 h1 {
-    font-size: 2em;
-    margin: 0;
+  font-size: 2em;
+  margin: 0;
 }
 
 h2 {
-    font-size: 1.5em;
-    font-weight: var(--light);
-    color: var(--primary-green);
+  font-size: 1.5em;
+  font-weight: var(--light);
+  color: var(--primary-green);
 }
 
 p {
-    font-size: 2.5em;
-    font-weight: var(--light);
-    color: var(--primary-green);
-    margin: 0.2em 0 0.7em 0.25em;
+  font-size: 2.5em;
+  font-weight: var(--light);
+  color: var(--primary-green);
+  margin: 0.2em 0 0.7em 0.25em;
+}
+
+.introduction {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 5em;
+}
+
+.name {
+  font-size: 4em;
+  grid-column: 1 / 3;
+  grid-row: 1;
+  word-spacing: 0em;
+  text-align: center;
+}
+.stripe {
+  position: absolute;
+  width: 100%;
+  height: 0.2em;
+  background-color: var(--secondary-green);
+  top: 5.3em;
+}
+.title {
+  position: absolute;
+  font-size: 3em;
+  grid-column: 1/2;
+  grid-row: 2;
+  word-spacing: -0.1em;
+  top: 0;
+  left: 0;
+}
+
+.city {
+  position: absolute;
+  font-size: 3em;
+  grid-column: 2/3;
+  grid-row: 2;
+  top: 0;
+  right: 0;
+}
+
+.city #time {
+  position: absolute;
+  font-family: var(--antonio);
+  font-size: 0.5em;
+  top: 2em;
+  right: 1em;
 }
