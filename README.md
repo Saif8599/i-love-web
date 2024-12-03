@@ -24,6 +24,3 @@ Dit project is gericht op het ontwikkelen van webvaardigheden door middel van pr
 
 Gedetailleerde documentatie van alle sprints, leerpunten, codevoorbeelden en feedback is beschikbaar in de [Wiki](https://github.com/Saif8599/i-love-web/wiki). Hier vind je alles over de voortgang, aanpak en bevindingen per sprint.
 
----
-
-Veel plezier met het verkennen van het project! 😊
