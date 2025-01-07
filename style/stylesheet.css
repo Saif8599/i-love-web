@@ -13,13 +13,14 @@
 }
 
 @font-face {
-    font-family: "Photograph-Signature";
-    font-style: normal;
-    font-weight: normal;
-    src: url("../assets/fonts/Photograph-Signature.ttf") format("opentype");
-  }
+  font-family: "Photograph-Signature";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Photograph-Signature.ttf") format("opentype");
+}
 
 body {
+  margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 
@@ -55,7 +56,17 @@ body {
   --white: #fff; /* White */
   --lightred: #f0e5e9; /* Light Red */
   --black: #1f000b; /* Black */
-  --grey: #6a6a6a; /* Grey */
+  --grey: #807b7b; /* Grey */
+
+  /* Animation */
+  --transition: transform 0.7s ease-in-out;
+
+  --font-color: #807b7b;
+  
+  --mobile-width: 325px;
+  --mobile-height: 670px;
+  --mobile-radius: 25px;
+  --separator-height: 500px;
 }
 
 /* Typografie */
@@ -63,7 +74,7 @@ h1 {
   font-family: var(--antonio), sans-serif;
   font-size: var(--font-size-l);
   font-weight: var(--light);
-  color: var(--primary-green);
+  color: var(--secondary-green);
 }
 
 h2 {
@@ -79,10 +90,9 @@ h3 {
 }
 
 p {
-  font-family: var(--photograph-signature), sans-serif;
+  font-family: var(--antonio), sans-serif;
   font-size: var(--font-size-l);
   line-height: 1em;
-  margin-left: 0.25em;
 }
 
 /* Buttons and Links */

@@ -6,49 +6,55 @@
     <link rel="stylesheet" href="../style/stylesheet.css" />
     <link rel="stylesheet" href="../style/index.css" />
     <title>Digital Journey</title>
+    <script src="./script/main.js"></script>
   </head>
   <body>
-    <main>
-      <!-- Section 1: Introduction -->
-      <section class="introduction">
-        <h1 class="name">Saif Muhamad</h1>
-        <div class="stripe"></div>
-        <p class="title">I Love Web</p>
-        <p class="city">
-          Amsterdam, <time id="time" datetime="2021-11-29T03:58">16:44:01</time>
-        </p>
-      </section>
-
-      <!-- Section 2: Identity -->
-      <section class="identity">
-        <div class="identity-row">Frontend</div>
-        <div class="identity-row">Web</div>
-        <div class="identity-row">Developer</div>
-        <div class="identity-row">Based</div>
-        <div class="identity-row">In Amsterdam</div>
-      </section>
-
-      <!-- Section 3: Chapters -->
-      <section class="chapters">
-        <div class="chapter-row">
-          <h2>Chapter 1</h2>
-          <p>
-            From Darkness to Light: Transform your thoughts, transform your life
-          </p>
+    <div class="container">
+      <div class="mobile-layout">
+        <div class="book-cover">
+          <img
+            class="book-top"
+            src="/assets/images/book-top.png"
+            alt="book-top"
+          />
+          <img
+            class="book-side"
+            src="https://raw.githubusercontent.com/atomic-variable/images-repo/e37f432405904a280858e5437ce1960753bc78a3/book-side.svg"
+            alt="book-side"
+          />
         </div>
-        <div class="chapter-row">
-          <h2>Chapter 2</h2>
-          <p>Escape the Scroll: Rediscover life beyond the feed</p>
+        <div class="preface">
+          <div class="content">
+            <div class="header">
+              <div class="title">
+                Interactive Blueprint: My Path to Web Mastery
+              </div>
+            </div>
+            <div class="author">by Saif Muhamad</div>
+            <div class="chapters">
+              <a href="/pages/chapter1.html"
+                ><p>Chapter 1</p>
+                <p>
+                  From Darkness to Light: Transform your thoughts, transform
+                  your life
+                </p></a
+              >
+              <a href="/pages/chapter2.html"
+                ><p>Chapter 2</p>
+                <p>My Journey of Tech and Discovery</p></a
+              >
+              <a href="/pages/chapter3.html"
+                ><p>Chapter 3</p>
+                <p>The Art of Color and Design</p></a
+              >
+              <a href="/pages/chapter4.html"
+                ><p>Chapter 4</p>
+                <p>Thought of the day</p>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="chapter-row">
-          <h2>Chapter 3</h2>
-          <p>My Journey of Tech and Discovery</p>
-        </div>
-        <div class="chapter-row">
-          <h2>Chapter 4</h2>
-          <p>The Art of Color and Design</p>
-        </div>
-      </section>
-    </main>
+      </div>
+    </div>
   </body>
 </html>
