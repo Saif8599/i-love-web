@@ -19,6 +19,12 @@
   src: url("../assets/fonts/Photograph-Signature.ttf") format("opentype");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -62,7 +68,7 @@ body {
   --transition: transform 0.7s ease-in-out;
 
   --font-color: #807b7b;
-  
+
   --mobile-width: 325px;
   --mobile-height: 670px;
   --mobile-radius: 25px;
@@ -106,7 +112,6 @@ a:hover {
 }
 
 /* Button styles */
-
 
 .test {
   font-family: var(--block-font);
