@@ -1,0 +1,29 @@
+{
+  "name": "i-love-web",
+  "version": "1.0.0",
+  "description": "**Welkom bij het I Love Web Project!**  \r Dit project is gericht op het ontwikkelen van webvaardigheden door middel van praktijkgerichte sprints, met een focus op design, toegankelijkheid en interactiviteit.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saif8599/i-love-web.git"
+  },
+  "author": "Saif Muhamad",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Saif8599/i-love-web/issues"
+  },
+  "homepage": "https://github.com/Saif8599/i-love-web#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "liquidjs": "^10.21.0",
+    "marked": "^15.0.8"
+  }
+}

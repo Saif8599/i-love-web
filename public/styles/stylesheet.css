@@ -2,21 +2,21 @@
   font-family: "Antonio";
   font-style: normal;
   font-weight: normal;
-  src: url("../assets/fonts/Antonio.ttf") format("woff");
+  src: url("../fonts/Antonio.ttf") format("woff");
 }
 
 @font-face {
   font-family: "BlockFont";
   font-style: normal;
   font-weight: normal;
-  src: url("../assets/fonts/BlockFont-Regular.otf") format("opentype");
+  src: url("../fonts/BlockFont-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Photograph-Signature";
   font-style: normal;
   font-weight: normal;
-  src: url("../assets/fonts/Photograph-Signature.ttf") format("opentype");
+  src: url("../fonts/Photograph-Signature.ttf") format("opentype");
 }
 
 * {

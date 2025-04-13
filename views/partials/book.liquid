@@ -1,0 +1,185 @@
+<style>
+  .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-green);
+  }
+
+  .info {
+    font-family: "Quicksand"
+    , sans-serif;
+    font-family: "Open Sans"
+    , sans-serif;
+    font-style: italic;
+    font-size: 26px;
+    margin-top: 10px;
+    color: var(--grey);
+  }
+
+  .mobile-layout {
+    width: var(--mobile-width);
+    height: var(--mobile-height);
+    margin: 30px 0;
+    border-radius: var(--mobile-radius);
+    perspective: 500px;
+    overflow: hidden;
+    color: var(--font-color);
+    background-color: var(--secondary-green);
+    box-shadow: 36px 36px 55px 15px var(--primary-green);
+
+    @media (min-width: 600px) {
+      box-shadow: 36px 36px 50px 15px var(--primary-green);
+    }
+
+    .book-cover {
+      position: relative;
+      height: var(--separator-height);
+      width: calc(var(--mobile-width) * 2);
+      left: -52.5%;
+      border-top-left-radius: var(--mobile-radius);
+      border-top-right-radius: var(--mobile-radius);
+      background-color: var(--primary-green);
+      transform-style: preserve-3d;
+      transform-origin: 50% 40%;
+      transition: var(--transition);
+      z-index: 4;
+      cursor: pointer;
+    }
+
+    .book-top {
+      width: 170px;
+      position: absolute;
+      border-radius: 3%;
+      top: 195px;
+      left: 250px;
+      z-index: 5;
+      transform: translateZ(28.5px);
+    }
+
+    .book-side {
+      position: absolute;
+      top: 430px;
+      left: 222px;
+      transform: translateY(-15px) translateX(0px) translateZ(17px) rotateX(104deg);
+    }
+
+    .visible {
+      transform: rotateX(75deg) translateZ(3px) scale(0.75);
+    }
+
+    .visible + .preface {
+      transform: translateY(-302px);
+    }
+
+    .preface {
+      height: var(--separator-height);
+      padding: 20px 30px;
+      transition: var(--transition);
+      background: white;
+
+      .header {
+        display: flex;
+        align-items: center;
+        .title {
+          font-family: "Quiksand"
+          , sans-serif;
+          font-size: 26px;
+          margin-bottom: 10px;
+          font-weight: 600;
+          text-shadow: 1px 1px var(--warm-taupe);
+        }
+      }
+
+      .author {
+        font-family: var(--open-sans)
+        , sans-serif;
+        font-style: italic;
+        margin-bottom: 30px;
+      }
+
+      .chapters {
+        cursor: "url:";
+        /* balpen pointer */
+        h2 {
+          font-size: var(--font-size-m);
+          line-height: 1em;
+          margin: 0;
+          color: black;
+          font-weight: 400;
+        }
+        a {
+          font-size: 0.5em;
+          color: var(--primary-green);
+
+          p {
+            font-size: 2.5em;
+            margin: 0.5em 0 1em;
+            transition: color 0.3s ease;
+             &:hover {
+              color: var(--luxurious-gold);
+            }
+          }
+        }
+      }
+    }
+  }
+
+</style>
+<body>
+  <div class="container">
+    <div class="mobile-layout">
+      <div class="book-cover">
+        <img
+          class="book-top"
+          src="assets/book-top.png"
+          alt="book-top" />
+        <img
+          class="book-side"
+          src="https://raw.githubusercontent.com/atomic-variable/images-repo/e37f432405904a280858e5437ce1960753bc78a3/book-side.svg"
+          alt="book-side" />
+      </div>
+      <div class="preface">
+        <div class="content">
+          <div class="header">
+            <h1 class="title">
+              Interactive Blueprint: My Path to Web Mastery
+            </h1>
+          </div>
+          <div class="author">by Saif Muhamad</div>
+          <div class="chapters">
+            <h2>Chapter 1</h2>
+            <a href="pages/chapters/chapter1.html">
+              <p>My Journey of Tech and Discovery</p>
+            </a>
+            <h2>Chapter 2</h2>
+            <a href="pages/chapters/chapter2.html">
+              <p>
+                From Darkness to Light: Transform your thoughts, transform your life
+              </p>
+            </a>
+            <h2>Chapter 3</h2>
+            <a href="pages/chapters/chapter3.html">
+              <p>The Art of Color and Design</p>
+            </a>
+            <h2>Chapter 4</h2>
+            <a href="pages/chapters/chapter4.html">
+              <p>Thought of the day</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  let bookCover = document.querySelector(".book-cover");
+  
+  bookCover.addEventListener("click", () => {
+    bookCover.classList.toggle("visible");
+  });
+  });
+</script>
