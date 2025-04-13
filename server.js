@@ -5,6 +5,18 @@ import express from 'express'
 // Importeer de Liquid package (ook als dependency via npm geïnstalleerd)
 import { Liquid } from 'liquidjs';
 
+// Zodat we bestanden en mappen in kunnen lezen.. Cool!
+import { readdir, readFile } from 'node:fs/promises'
+
+// Markdown parsen, ook cool!
+import { marked } from 'marked'
+
+// Frontmatter uitlezen, nog cooler!
+import matter from 'gray-matter'
+
+// Lees alle bestandsnamen uit de content directory in
+const files = await readdir('content')
+
 // Maak een nieuwe Express applicatie aan, waarin we de server configureren
 const app = express()
 
@@ -24,6 +36,17 @@ app.get('/', async function(request, response) {
   response.render('home.liquid')
 })
 
+app.get('/learning-journal', async function(req, res) {
+  res.render('learning-journal.liquid', {files: files})
+})
+
+app.get('/learning-journal/:slug', async function(req, res) {
+  const fileContents = await readFile('content/' + req.params.slug + '.md', { encoding: 'utf8' })
+  const article = matter(fileContents)
+  const markedUpContent = marked.parse(article.content)
+
+  res.render('artikel.liquid', {fileContents: markedUpContent, metadata: article.data})
+})
 // Stel het poortnummer in waar Express op moet gaan luisteren
 // Lokaal is dit poort 8000, als dit ergens gehost wordt, is het waarschijnlijk poort 80
 app.set('port', process.env.PORT || 8000)

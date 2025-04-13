@@ -1,0 +1,6 @@
+{% render 'partials/header.liquid', title: 'Artikel' %}
+
+<h1>{{  metadata.title }}</h1>
+<p class="datum">{{ metadata.date }}</p>
+
+{{ fileContents }}

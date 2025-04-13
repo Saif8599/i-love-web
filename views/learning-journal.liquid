@@ -1,0 +1,10 @@
+{% render 'partials/header.liquid', title: 'Learning Journal' %}
+
+<h1>My Journey of Tech and Discovery</h1>
+
+<section class="articles">
+	{% for file in files %}
+		<a href="/learning-journal/{{ file|slice:0,-3 }}">{{ file|slice:0,-3 }}</a>
+	{% endfor %}
+</section>
+
