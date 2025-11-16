@@ -1,3 +1,9 @@
+---
+title: Sprint 3 - All Human
+sprint: 3
+layout: base.njk
+---
+
 # Week 1
 ## 14-10-2024: 
 **WCAG Audit**

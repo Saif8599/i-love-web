@@ -1,3 +1,9 @@
+---
+title: Sprint 6 - The Startup
+sprint: 6
+layout: base.njk
+---
+
 # Week 1  
 ## 6-1-2025:
 **Briefing van je opdrachtgever**  

@@ -1,3 +1,9 @@
+---
+title: Sprint 7 - Connect Your Tribe
+sprint: 7
+layout: base.njk
+---
+
 # Week 1  
 ## 4-2-2025  
 **Sprint planning Connect Your Tribe**
@@ -133,7 +139,7 @@ https://github.com/OFRqq/connect-your-tribe-profile-card/issues/1#issuecomment-2
 **Url structureren**  
 ### Ontdekkingen
 
-| Feature            | `{% include %}`  | `{% render %}`  |
+| Feature            | include | render  |
 |--------------------|------------------|-----------------|
 | **Hoe wordt de partial geladen?** | Direct in de huidige scope | In een **eigen, geïsoleerde** scope |
 | **Heeft toegang tot de ouder-variabelen?** | ✅ Ja, krijgt alle variabelen uit de parent | ❌ Nee, krijgt alleen de meegegeven variabelen |

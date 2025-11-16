@@ -5,7 +5,7 @@ Dit project is gericht op het ontwikkelen van webvaardigheden door middel van pr
 
 ---
 
-## 🏃 Sprints Overzicht
+## Sprints Overzicht
 
 1. **Sprint 1: Your Tribe**  
    Basis webontwikkeling en samenwerking binnen een team.

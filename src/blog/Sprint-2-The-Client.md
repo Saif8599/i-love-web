@@ -1,3 +1,9 @@
+---
+title: Sprint 2 - The Client
+sprint: 2
+layout: base.njk
+---
+
 # Week 1
 ## 23-9-2024: 
 **Kennisgemaakt met de opdrachtgever**

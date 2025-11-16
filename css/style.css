@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Figtree font */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  /* Colors */
+  --color-primary: #5E0606;
+  --color-primary-light: hsl(0, 94%, 35%);
+  --color-primary-dark: hsl(0, 94%, 12%);
+  
+  --color-secondary: #38423B;
+  --color-secondary-light: hsl(144, 10%, 35%);
+  --color-secondary-dark: hsl(144, 10%, 15%);
+  
+  --color-accent: #C5CBD3;
+  --color-accent-light: hsl(216, 14%, 90%);
+  --color-accent-dark: hsl(216, 14%, 65%);
+  
+  --color-black: #000000;
+  
+  /* Font sizes */
+  --text-xs: 0.75rem;    /* 12px */
+  --text-sm: 0.875rem;   /* 14px */
+  --text-base: 1rem;     /* 16px */
+  --text-lg: 1.125rem;   /* 18px */
+  --text-xl: 1.25rem;    /* 20px */
+  --text-2xl: 1.5rem;    /* 24px */
+  --text-3xl: 1.875rem;  /* 30px */
+  --text-4xl: 2.25rem;   /* 36px */
+  --text-5xl: 3rem;      /* 48px */
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  line-height: 1.6;
+  color: var(--color-black);
+  background-color: white;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: var(--text-4xl);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--text-3xl);
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+h3 {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+}
+
+h4 {
+  font-size: var(--text-xl);
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: var(--text-base);
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-primary-light);
+  text-decoration: underline;
+}

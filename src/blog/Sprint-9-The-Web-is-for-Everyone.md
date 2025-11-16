@@ -1,3 +1,9 @@
+---
+title: Sprint 9 - The Web is for Everyone
+sprint: 9
+layout: base.njk
+---
+
 # week 1
 ## 24-3-2025  
 **Workshop Progressive Enhancement**
@@ -56,6 +62,11 @@ Loading state [wait times](https://primer.style/product/ui-patterns/loading/#ada
 ### Ontdekkingen
 
 https://www.quora.com/How-do-I-add-a-WhatsApp-API-to-HTML
+
+Math.max()
+
+Math.min()
+
 
 ## 4-4-2025  
 **Retrospect sprint 9**

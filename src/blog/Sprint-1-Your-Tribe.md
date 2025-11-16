@@ -1,3 +1,9 @@
+---
+title: Sprint 1 - Your Tribe
+sprint: 1
+layout: base.njk
+---
+
 # Week 1
 ## 6-9-2024: 
 **Review van het visitekaartje**

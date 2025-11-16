@@ -1,3 +1,9 @@
+---
+title: Sprint 8 - Server-Side Rendering
+sprint: 8
+layout: base.njk
+---
+
 # week 1
 ## 3-3-2025  
 **Sprintplanning Server-Side Rendering + Briefing van de opdrachtgever**

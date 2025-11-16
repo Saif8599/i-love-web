@@ -1,3 +1,9 @@
+---
+title: Sprint 4 - Look and Feel
+sprint: 4
+layout: base.njk
+---
+
 # Week 1
 ## 11-11-2024: 
 **Workshop Styleguide**
